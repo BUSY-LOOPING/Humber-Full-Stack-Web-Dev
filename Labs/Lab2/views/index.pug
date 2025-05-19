@@ -1,0 +1,42 @@
+extends template
+
+append stylesheets 
+    link(rel="stylesheet", href="/css/index.css")
+
+block banner-content
+    div.black-overlay
+        img(src="/img/banner.jpg", alt="Banner Image")
+
+block layout-content
+    section.product-grid
+        .product-row
+            .product
+                img(src="/img/card1.jpg", alt="Boxy T-Shirt")
+                p.product-name Boxy T-Shirt
+                p.product-price $44.00
+
+            .product
+                img(src="/img/card2.jpg", alt="Classic T-Shirt")
+                p.product-name Classic T-Shirt
+                p.product-price $29.00
+
+            .product
+                img(src="/img/card3.jpg", alt="Essential T-Shirt - White - 3 Pack")
+                p.product-name Essential T-Shirt - White - 3 Pack
+                p.product-price $81.50
+
+        .product-row
+            .product
+                img(src="/img/card4.jpg", alt="Essential White T-Shirts - 5 Pack")
+                p.product-name Essential White T-Shirts - 5 Pack
+                p.product-price $135.00
+
+            .product
+                img(src="/img/card5.jpg", alt="Essential Black T-Shirts - 5 Pack")
+                p.product-name Essential Black T-Shirts - 5 Pack
+                p.product-price $135.00
+
+            .product
+                img(src="/img/card6.jpg", alt="Essential Black T-Shirts - 3 Pack")
+                p.product-name Essential Black T-Shirts - 3 Pack
+                p.product-price $81.50

@@ -1,0 +1,32 @@
+
+.product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.product-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product-name {
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.product-price {
+    color: #555;
+}

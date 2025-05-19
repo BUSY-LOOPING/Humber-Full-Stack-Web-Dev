@@ -12,9 +12,13 @@ app.set("view engine", "pug");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", (request, response) => {
-    response.render("index");
+    response.render("index", {title : "T-shirt"});
 });
 
+app.get("/about", (request, response) => {
+    response.render("about", {title : "About Us"});
+});
+ 
 app.listen(port, ()=> {
     console.log(`Server stated at http://localhost:${port}`);
 });

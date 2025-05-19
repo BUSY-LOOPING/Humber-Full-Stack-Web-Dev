@@ -1,0 +1,107 @@
+html(lang="en") 
+    head
+        meta(charset="utf-8")
+        title DripNest
+        block stylesheets
+            link(rel="stylesheet", href="/css/common.css")
+        block scripts
+            script(async, defer, src="/js/common.js")
+            script(src="https://kit.fontawesome.com/3232afc95f.js", crossorigin="anonymous")
+    body
+        header#header
+            a(href="/").logo-text DripNest
+
+            nav#header-middle-nav
+                ul.nav-element
+                    li
+                        a(href="/") BASICS
+                    li
+                        a(href="/products") ACCESSORIES
+                    li
+                        a(href="/cart") HATS
+                    li
+                        a(href="/about") ABOUT
+
+            nav#header-right-nav
+                ul.nav-element
+                    li:i.fa-solid.fa-magnifying-glass.fa-lg
+
+                    li:i.fa-regular.fa-user.fa-lg
+
+                    li:i.fa-solid.fa-cart-shopping.fa-lg
+
+        div.banner
+                block banner-content
+        h1 #{title}
+        main
+            block layout-content
+        footer#footer
+    .footer-container
+        .footer-left
+            img.logo(src="/img/cloud.png", alt="Logo")
+            .footer-columns
+                .footer-column
+                    h3 PRODUCTS
+                    ul
+                        li: a(href="/custom") CUSTOM
+                        li: a(href="/t-shirt") T-SHIRT
+                        li: a(href="/hoodie") HOODIE
+                        li: a(href="/crewneck") CREWNECK
+                        li: a(href="/tuque") TUQUE
+                        li: a(href="/cap") CAP
+                        li: a(href="/socks") SOCKS
+                        li: a(href="/tote-bag") TOTE BAG
+
+                .footer-column
+                    h3 QUESTIONS?
+                    ul
+                        li: a(href="/faq") FAQ
+                        li: a(href="/about") ABOUT
+                        li: a(href="/size-guide") SIZE GUIDE
+                        li: a(href="/refund") REFUND
+                        li: a(href="/delivery") DELIVERY
+                        li: a(href="/reviews") REVIEWS
+                        li: a(href="/blog") BLOG
+                        li: a(href="/contact") CONTACT
+
+            p.contact-email
+                a(href="#") abc@dripnest.co
+
+        .footer-right
+            h3 15% discount when you subscribe
+            form.subscribe-form
+                input(type="email", placeholder="Subscribe to private messages")
+                button(type="submit"): i.fa-solid.fa-arrow-right
+
+            .social-icons
+                i.fa-brands.fa-facebook-f
+                i.fa-brands.fa-instagram
+                i.fa-brands.fa-youtube
+                i.fa-brands.fa-tiktok
+
+                
+
+    .footer-bottom
+        .footer-links
+            a(href="/refund-policy") Refund Policy
+            a(href="/privacy-policy") Privacy Policy
+            a(href="/terms") Terms of Use
+            a(href="/shipping") Shipping Policy
+            a(href="/contact-details") Contact details
+
+        .footer-language
+            button.language-selector
+                i.fa-solid.fa-rotate
+                |  French
+
+        .footer-payments
+            img(src="/img/american_express.jpg", alt="American Express")
+            img(src="/img/apple_pay.jpg", alt="Apple Pay")
+            img(src="/img/discover.jpg", alt="Discover")
+            img(src="/img/gpay.jpg", alt="Google Pay")
+            img(src="/img/mastercard.jpg", alt="Mastercard")
+            img(src="/img/shop.jpg", alt="Shop Pay")
+            img(src="/img/visa.jpg", alt="Visa")
+
+            
+            
