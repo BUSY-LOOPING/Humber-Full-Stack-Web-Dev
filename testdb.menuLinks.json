@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "682f5ea8ddc5d7180b8b5dfa"
+  },
+  "name": "Home",
+  "path": "/",
+  "weight": 0
+},
+{
+  "_id": {
+    "$oid": "682f5f54ddc5d7180b8b5dfc"
+  },
+  "name": "About",
+  "path": "/about",
+  "weight": 1
+},
+{
+  "_id": {
+    "$oid": "682f67cd8c0ab2bd174ac590"
+  },
+  "weight": 5,
+  "name": "my-test",
+  "path": "/my-test"
+},
+{
+  "_id": {
+    "$oid": "682f67f4e07322d9f817cf3d"
+  },
+  "weight": 10,
+  "name": "test2",
+  "path": "/test2"
+},
+{
+  "_id": {
+    "$oid": "683512aa2700d930a5f12852"
+  },
+  "weight": 10,
+  "name": "test3->4",
+  "path": "/test3"
+}]

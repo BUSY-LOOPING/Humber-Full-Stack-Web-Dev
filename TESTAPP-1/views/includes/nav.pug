@@ -1,6 +1,4 @@
 nav(aria-label="Main navigation")
     ul
-        li
-            a(href="/") Home
-        li
-            a(href="/about") About
+        each link in links
+            li: a(href=link.path) #{link.name}
