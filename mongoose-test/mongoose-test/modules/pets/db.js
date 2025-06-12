@@ -51,7 +51,7 @@ async function addPet(petName, petType, petBreed, petAge) {
       name: String(petName),
       type: String(petType),
       breed: String(petBreed),
-      age: petAge
+      age: parseInt(petAge)
     }
   );
   let error = newPet.validateSync();

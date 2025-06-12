@@ -30,7 +30,7 @@ app.get("/", async (request, response) => {
 });
 app.get("/add", async (request, response) => {
   //add a pet
-  await db.addPet("Mittens", "cat", "Maine Coon", "three");
+  await db.addPet("Mittens", "cat", "Maine Coon", 3);
   response.redirect("/");
 });
 app.get("/update", async (request, response) => {
